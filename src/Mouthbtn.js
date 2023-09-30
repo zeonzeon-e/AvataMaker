@@ -26,10 +26,12 @@ function mouthbtnBefore(){
 
 function Mouthbtn(){
     return(
-        <div>
-            <button className='mouthBtn' onClick={() => mouthbtnBefore()}>입 이전!</button>
-            <button className='mouthBtn' onClick={() => mouthbtnNext()}>입 이후!</button>
-        </div>
+        <div className="btn">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"></link>
+          <span class="material-icons" onClick={() => mouthbtnBefore()}>arrow_back</span>
+          <p>MOUTH</p>
+          <span class="material-icons" onClick={() => mouthbtnNext()}>arrow_forward</span>
+      </div>
     )
 }
 

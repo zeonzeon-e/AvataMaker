@@ -74,9 +74,8 @@ function App() {
         <h1>Avata Maker</h1>
       </header>
       <body>
-
         <div className='set_div' id='imageBox'>
-        <canvas width="180" height="260"></canvas>
+        <canvas width="180" height="230"></canvas>
           <img className='set' id='clothImg' src={'img/cloth/cloth' + i + '.png'}></img>
           <img className='set' id='faceImg' src={'img/face/face' + i + '.png'}></img>
           <img className='set' id='hairImg' src={'img/hair/hair' + i + '.png'}></img>
@@ -86,14 +85,17 @@ function App() {
           <img className='set' src='img/eyes/eyes1.png'></img>
           <img className='set' src='img/mouth/mouth1.png'></img> */}
           <img className='set' id='accImg' src={'./img/acc/acc' + i + '.png'}></img>
+          <p>VR전시회</p>
         </div>
-        <Accbtn />
-        <Facebtn />
-        <Clothbtn />
-        <Hairbtn />
-        <Eyesbtn />
-        <Mouthbtn />
-        <button onClick={onCapture}>다운로드</button>
+        <div className='btn_div'>
+          <Accbtn />
+          <Facebtn />
+          <Clothbtn />
+          <Hairbtn />
+          <Eyesbtn />
+          <Mouthbtn />
+          <button onClick={onCapture}>DOWNLOAD</button>
+        </div>
       </body>
 
       {/* <script>

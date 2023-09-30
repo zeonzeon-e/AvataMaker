@@ -67,6 +67,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
         <title>아바타만들기</title>
         <h1>Avata Maker</h1>
       </header>

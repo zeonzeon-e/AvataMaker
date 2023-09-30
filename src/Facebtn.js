@@ -26,10 +26,12 @@ function facebtnBefore(){
 
 function Facebtn(){
     return(
-        <div>
-            <button className='faceBtn' onClick={() => facebtnBefore()}>얼굴 이전!</button>
-            <button className='faceBtn' onClick={() => facebtnNext()}>얼굴 이후!</button>
-        </div>
+        <div className="btn">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"></link>
+          <span class="material-icons" onClick={() => facebtnBefore()}>arrow_back</span>
+          <p>FACE</p>
+          <span class="material-icons" onClick={() => facebtnNext()}>arrow_forward</span>
+      </div>
     )
 }
 

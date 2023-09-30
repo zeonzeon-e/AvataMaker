@@ -4,8 +4,8 @@ import "./btn.css"
 var i = 1;
 function accbtnBefore(){
     let accImg = document.getElementById("accImg");
-      if(i === 0){
-        i = 19;
+      if(i === 1){
+        i = 20;
       }
       i--;
       accImg.setAttribute('src', 'img/acc/acc' + i + '.png');
@@ -26,9 +26,11 @@ function accbtnBefore(){
 
 function Accbtn(){
     return(
-        <div>
-            <button className='accBtn' onClick={() => accbtnBefore()}>약세서리 이전!</button>
-            <button className='accBtn' onClick={() => accbtnNext()}>악세서리 이후!</button>
+        <div className="btn">
+          <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"></link>
+            <span class="material-icons" onClick={() => accbtnBefore()}>arrow_back</span>
+            <p>ACCESSORY</p>
+            <span class="material-icons" onClick={() => accbtnNext()}>arrow_forward</span>
         </div>
     )
 }

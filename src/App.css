@@ -1,17 +1,13 @@
 .App{
-  display: block;
-  text-align: center;
-  margin: auto;
-}
-
-body{
+  padding-top: 50px;
   display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+  width: 100%;
 }
 
-canvas{
-  align-items: center;
-  text-align: center;
-}
 
 .set{
   position: absolute;
@@ -19,16 +15,34 @@ canvas{
 
 .set_div{
   display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 5%;
+  width: 180px;
+  height: 260px;
 }
 
 .set_div img{
   width: 180px;
 }
 
-button:hover{
-  cursor: pointer;
+.btn_div{
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+  align-items: center;
 }
+
 button{
-  display: block;
-  z-index: 1;
+  margin-top: 5%;
+  padding: 5%;
+  width: 100%;
+}
+
+.App-header{
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 40px;
 }

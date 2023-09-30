@@ -26,10 +26,12 @@ function hairbtnBefore(){
 
 function Hairbtn(){
     return(
-        <div>
-            <button className='hairBtn' onClick={() => hairbtnBefore()}>머리 이전!</button>
-            <button className='hairBtn' onClick={() => hairbtnNext()}>머리 이후!</button>
-        </div>
+      <div className="btn">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"></link>
+        <span class="material-icons" onClick={() => hairbtnBefore()}>arrow_back</span>
+        <p>HAIRSTAYLE</p>
+        <span class="material-icons" onClick={() => hairbtnNext()}>arrow_forward</span>
+    </div>
     )
 }
 

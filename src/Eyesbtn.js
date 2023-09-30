@@ -26,10 +26,12 @@ function eyesbtnBefore(){
 
 function Eyesbtn(){
     return(
-        <div>
-            <button className='eyesBtn' onClick={() => eyesbtnBefore()}>눈 이전!</button>
-            <button className='eyesBtn' onClick={() => eyesbtnNext()}>눈 이후!</button>
-        </div>
+        <div className="btn">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"></link>
+          <span class="material-icons" onClick={() => eyesbtnBefore()}>arrow_back</span>
+          <p>EYES</p>
+          <span class="material-icons" onClick={() => eyesbtnNext()}>arrow_forward</span>
+      </div>
     )
 }
 
