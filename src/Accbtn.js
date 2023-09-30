@@ -8,7 +8,7 @@ function accbtnBefore(){
         i = 20;
       }
       i--;
-      accImg.setAttribute('src', 'img/acc/acc' + i + '.png');
+      accImg.setAttribute('src', 'acc/acc' + i + '.png');
       console.log(i);
 
 }
@@ -19,7 +19,7 @@ function accbtnBefore(){
         i = 0;
       }
       i++;
-      accImg.setAttribute('src', 'img/acc/acc' + i + '.png');
+      accImg.setAttribute('src', 'acc/acc' + i + '.png');
       console.log(i);
 
 }

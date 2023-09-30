@@ -8,7 +8,7 @@ function mouthbtnBefore(){
         i = 12;
       }
       i--;
-      mouthImg.setAttribute('src', 'img/mouth/mouth' + i + '.png');
+      mouthImg.setAttribute('src', 'mouth/mouth' + i + '.png');
       console.log(i);
 
 }
@@ -19,7 +19,7 @@ function mouthbtnBefore(){
         i = 0;
       }
       i++;
-      mouthImg.setAttribute('src', 'img/mouth/mouth' + i + '.png');
+      mouthImg.setAttribute('src', 'mouth/mouth' + i + '.png');
       console.log(i);
 
 }

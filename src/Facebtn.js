@@ -8,7 +8,7 @@ function facebtnBefore(){
         i = 9;
       }
       i--;
-      faceImg.setAttribute('src', 'img/face/face' + i + '.png');
+      faceImg.setAttribute('src', 'face/face' + i + '.png');
       console.log(i);
 
 }
@@ -19,7 +19,7 @@ function facebtnBefore(){
         i = 0;
       }
       i++;
-      faceImg.setAttribute('src', 'img/face/face' + i + '.png');
+      faceImg.setAttribute('src', 'face/face' + i + '.png');
       console.log(i);
 
 }

@@ -8,7 +8,7 @@ function hairbtnBefore(){
         i = 33;
       }
       i--;
-      hairImg.setAttribute('src', 'img/hair/hair' + i + '.png');
+      hairImg.setAttribute('src', 'hair/hair' + i + '.png');
       console.log(i);
 
 }
@@ -19,7 +19,7 @@ function hairbtnBefore(){
         i = 0;
       }
       i++;
-      hairImg.setAttribute('src', 'img/hair/hair' + i + '.png');
+      hairImg.setAttribute('src', 'hair/hair' + i + '.png');
       console.log(i);
 
 }

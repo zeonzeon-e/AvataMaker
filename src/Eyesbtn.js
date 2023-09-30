@@ -8,7 +8,7 @@ function eyesbtnBefore(){
         i = 7;
       }
       i--;
-      eyesImg.setAttribute('src', 'img/eyes/eyes' + i + '.png');
+      eyesImg.setAttribute('src', 'eyes/eyes' + i + '.png');
       console.log(i);
 
 }
@@ -19,7 +19,7 @@ function eyesbtnBefore(){
         i = 0;
       }
       i++;
-      eyesImg.setAttribute('src', 'img/eyes/eyes' + i + '.png');
+      eyesImg.setAttribute('src', 'eyes/eyes' + i + '.png');
       console.log(i);
 
 }

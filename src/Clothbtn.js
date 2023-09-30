@@ -8,7 +8,7 @@ function clothbtnBefore(){
         i = 26;
       }
       i--;
-      clothImg.setAttribute('src', 'img/cloth/cloth' + i + '.png');
+      clothImg.setAttribute('src', 'cloth/cloth' + i + '.png');
       console.log(i);
 
 }
@@ -19,7 +19,7 @@ function clothbtnBefore(){
         i = 0;
       }
       i++;
-      clothImg.setAttribute('src', 'img/cloth/cloth' + i + '.png');
+      clothImg.setAttribute('src', 'cloth/cloth' + i + '.png');
       console.log(i);
 
 }
