@@ -34,35 +34,38 @@ var i = 1;
 // }
 function App() {
   // const divRef = useRef<HTMLDivElement>(null);
+
   // const handleDownload = async () => {
-  //   if(!divRef.current) return;
-  //   try{
+  //   if (!divRef.current) return;
+
+  //   try {
   //     const div = divRef.current;
-  //     const canvas = await html2canvas(div, { scale: 2});
+  //     const canvas = await html2canvas(div, { scale: 2 });
   //     canvas.toBlob((blob) => {
-  //       if(blob !== null){
+  //       if (blob !== null) {
   //         saveAs(blob, "result.png");
   //       }
   //     });
-  //   } catch(error){
+  //   } catch (error) {
   //     console.error("Error converting div to image:", error);
   //   }
-  // }
-  // const handleDownload=()=> {
-  //   html2canvas(document.getElementById('imageBox') as HTMLElement).then(
-  //     (canvas) => {
-  //       onSaveAs(canvas.toDataURL('img/'), 'download.png');
-  //     }
-  //   )
   // };
-  // const onSaveAs = (uri: string, filename: string) => {
-  //   const link = document.createElement('a');
-  //   document.body.appendChild(link);
-  //   link.href = uri;
-  //   link.download = filename;
-  //   link.click();
-  //   document.body.removeChild(link);
-  // };
+  const onCapture = () => {
+    html2canvas(document.getElementById('imageBox') as HTMLElement).then(
+      (canvas) => {
+        onSaveAs(canvas.toDataURL('image/png'), 'imgbox.png');
+      }
+    );
+  };
+  const onSaveAs = (uri :string, filename: string) => {
+    const link = document.createElement('a');
+    document.body.appendChild(link);
+    link.href = uri;
+    link.download = filename;
+    link.click();
+    document.body.removeChild(link);
+  }
+
 
   return (
     <div className="App">
@@ -71,7 +74,9 @@ function App() {
         <h1>Avata Maker</h1>
       </header>
       <body>
+
         <div className='set_div' id='imageBox'>
+        <canvas width="180" height="260"></canvas>
           <img className='set' id='clothImg' src={'img/cloth/cloth' + i + '.png'}></img>
           <img className='set' id='faceImg' src={'img/face/face' + i + '.png'}></img>
           <img className='set' id='hairImg' src={'img/hair/hair' + i + '.png'}></img>
@@ -88,7 +93,7 @@ function App() {
         <Hairbtn />
         <Eyesbtn />
         <Mouthbtn />
-        <button>다운로드</button>
+        <button onClick={onCapture}>다운로드</button>
       </body>
 
       {/* <script>

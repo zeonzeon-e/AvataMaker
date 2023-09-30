@@ -1,9 +1,16 @@
 .App{
   display: block;
+  text-align: center;
+  margin: auto;
 }
 
 body{
   display: flex;
+}
+
+canvas{
+  align-items: center;
+  text-align: center;
 }
 
 .set{
@@ -15,7 +22,7 @@ body{
 }
 
 .set_div img{
-  width: 30%;
+  width: 180px;
 }
 
 button:hover{
