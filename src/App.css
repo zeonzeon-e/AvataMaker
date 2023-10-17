@@ -46,3 +46,9 @@ button{
   font-weight: bold;
   padding-bottom: 40px;
 }
+
+.copy{
+  color: gray;
+  font-size: 10px;
+  padding-top: 30%;
+}

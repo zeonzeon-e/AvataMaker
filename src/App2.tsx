@@ -11,7 +11,7 @@ import html2canvas from 'html2canvas';
 
 import { Button } from "@chakra-ui/react"
 
-var i = 1;
+var i = 6;
 
 function App() {
   const onCapture = () => {
@@ -56,6 +56,10 @@ function App() {
           <Eyesbtn />
           <Mouthbtn />
           <Button colorScheme='teal' variant='solid' onClick={onCapture}>DOWNLOAD</Button>
+        </div>
+        <div className='copy'>
+          <p>Made by jihyeon Lee(MOTIV)</p>
+          <p>Illustrations by DrawKit</p>
         </div>
       </body>
     </div>
