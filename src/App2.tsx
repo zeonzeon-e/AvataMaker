@@ -9,6 +9,8 @@ import Eyesbtn from './Eyesbtn';
 import Mouthbtn from './Mouthbtn';
 import html2canvas from 'html2canvas';
 
+import { Button } from "@chakra-ui/react"
+
 var i = 1;
 
 function App() {
@@ -53,7 +55,7 @@ function App() {
           <Hairbtn />
           <Eyesbtn />
           <Mouthbtn />
-          <button onClick={onCapture}>DOWNLOAD</button>
+          <Button colorScheme='teal' variant='solid' onClick={onCapture}>DOWNLOAD</Button>
         </div>
       </body>
     </div>
