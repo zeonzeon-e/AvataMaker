@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import React from 'react';
 import './App.css';
 import './Reset.css';
@@ -9,47 +8,10 @@ import Hairbtn from './Hairbtn';
 import Eyesbtn from './Eyesbtn';
 import Mouthbtn from './Mouthbtn';
 import html2canvas from 'html2canvas';
-import { saveAs } from 'file-saver';
-import { useRef } from 'react';
 
 var i = 1;
-// function accbtnBefore(){
-//     let accImg = document.getElementById("accImg");
-//       if(i === 1){
-//         return;
-//       }else{
-//         i--;
-//         accImg.setAttribute('src', 'img/acc/acc' + i + '.png');
-//       }
-// }
-  
-//   function accbtnNext(){
-//     let accImg = document.getElementById("accImg");
-//       if(i === 18){
-//         return;
-//       }else{
-//         i++;
-//         accImg.setAttribute('src', 'img/acc/acc' + i + '.png');
-//       }
-// }
+
 function App() {
-  // const divRef = useRef<HTMLDivElement>(null);
-
-  // const handleDownload = async () => {
-  //   if (!divRef.current) return;
-
-  //   try {
-  //     const div = divRef.current;
-  //     const canvas = await html2canvas(div, { scale: 2 });
-  //     canvas.toBlob((blob) => {
-  //       if (blob !== null) {
-  //         saveAs(blob, "result.png");
-  //       }
-  //     });
-  //   } catch (error) {
-  //     console.error("Error converting div to image:", error);
-  //   }
-  // };
   const onCapture = () => {
     html2canvas(document.getElementById('imageBox') as HTMLElement).then(
       (canvas) => {
@@ -76,16 +38,13 @@ function App() {
       <body>
         <div className='set_div' id='imageBox'>
         <canvas width="180" height="230"></canvas>
-          <img className='set' id='clothImg' src={'cloth/cloth' + i + '.png'}></img>
-          <img className='set' id='faceImg' src={'face/face' + i + '.png'}></img>
+          <img className='set' id='clothImg' src={'cloth/cloth' + i + '.png'} />
+          <img className='set' id='faceImg' src={'face/face' + i + '.png'} />
           <img className='set' id='hairImg' src={'hair/hair' + i + '.png'}></img>
           <img className='set' id='eyesImg' src={'eyes/eyes' + i + '.png'}></img>
           <img className='set' id='mouthImg' src={'mouth/mouth' + i + '.png'}></img>
-          {/* <img className='set' src='img/hair/hair1.png'></img>
-          <img className='set' src='img/eyes/eyes1.png'></img>
-          <img className='set' src='img/mouth/mouth1.png'></img> */}
-          <img className='set' id='accImg' src={'./acc/acc' + i + '.png'}></img>
-          <p>VR전시회</p>
+          <img className='set' id='accImg' src={'acc/acc' + i + '.png'}></img>
+          <p>응애으니</p>
         </div>
         <div className='btn_div'>
           <Accbtn />
@@ -97,13 +56,6 @@ function App() {
           <button onClick={onCapture}>DOWNLOAD</button>
         </div>
       </body>
-
-      {/* <script>
-
-        let accBtn = document.getElementById("accImg");
-        accBtn.setAttribute('src', 'img/acc/acc' + i + '.png');
-        document.querySelector(".accBtn").addEventListener('click', accbtn(i));
-      </script> */}
     </div>
   );
 }
