@@ -1,5 +1,7 @@
 import React from "react";
-import "./btn.css"
+import "./btn.css";
+import right from "./Arrow/rightArrow.png";
+import left from "./Arrow/leftArrow.png";
 
 var i = 1;
 function mouthbtnBefore(){
@@ -28,9 +30,9 @@ function Mouthbtn(){
     return(
         <div className="btn">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"></link>
-          <span class="material-icons" onClick={() => mouthbtnBefore()}>arrow_back</span>
+          <span class="material-icons" onClick={() => mouthbtnBefore()}><img src={left} /></span>
           <p>MOUTH</p>
-          <span class="material-icons" onClick={() => mouthbtnNext()}>arrow_forward</span>
+          <span class="material-icons" onClick={() => mouthbtnNext()}><img src={right} /></span>
       </div>
     )
 }

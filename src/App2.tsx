@@ -38,6 +38,7 @@ function App() {
         <h1>Avata Maker</h1>
       </header>
       <body>
+        <div className='setDiv'>
         <div className='set_div' id='imageBox'>
         <canvas width="180" height="230"></canvas>
           <img className='set' id='clothImg' src={'cloth/cloth' + i + '.png'} />
@@ -46,7 +47,8 @@ function App() {
           <img className='set' id='eyesImg' src={'eyes/eyes' + i + '.png'}></img>
           <img className='set' id='mouthImg' src={'mouth/mouth' + i + '.png'}></img>
           <img className='set' id='accImg' src={'acc/acc' + i + '.png'}></img>
-          <p>응애으니</p>
+          <input className='set_input'type='text' autoFocus placeholder='출력하고 싶은 말을 쓰세요!'></input>
+        </div>
         </div>
         <div className='btn_div'>
           <Accbtn />
@@ -55,7 +57,7 @@ function App() {
           <Hairbtn />
           <Eyesbtn />
           <Mouthbtn />
-          <Button colorScheme='teal' variant='solid' onClick={onCapture}>DOWNLOAD</Button>
+          <Button bg='#030D45' color='#ffffff' variant='solid' onClick={onCapture}>DOWNLOAD</Button>
         </div>
         <div className='copy'>
           <p>Made by jihyeon Lee(MOTIV)</p>

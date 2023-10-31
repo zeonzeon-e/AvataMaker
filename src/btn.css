@@ -8,12 +8,10 @@
 .btn p{
     padding: 1%;
     width: 72%;
+    font-size: 25px;
 }
 .material-icons{
-    border: 1px solid black;
-    border-radius: 50%;
-    height: fit-content;
-    width: 14%;
+    width: 15%;
 }
 
 .material-icons:hover{
